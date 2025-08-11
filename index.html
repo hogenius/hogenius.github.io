@@ -69,12 +69,27 @@
         font-size: 0.85rem;
         color: #777;
       }
+      .email-box {
+        margin-top: 30px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>📸 Google 포토 슬라이드</h1>
-      <p>구글 포토에 저장된 추억을 멋진 슬라이드 쇼로 감상하세요!</p>
+      <p>
+        이 프로그램은 <strong>Google Photos API</strong>를 활용하여, 내가 선택한
+        앨범의 사진을 자동으로 불러와 시간·날씨·다크모드와 함께 슬라이드로
+        재생하는 <strong>로컬 전용 디지털 액자</strong> 솔루션입니다.
+      </p>
+      <p>
+        별도의 웹 서버 운영 없이, 내 컴퓨터나 라즈베리파이에서 안전하게 실행
+        가능합니다.
+      </p>
     </header>
 
     <section class="features">
@@ -118,10 +133,10 @@
       </div>
     </section>
 
-    <!-- <div class="btn-container">
-      <a href="{{ url_for('authorize') }}" class="btn">🔑 구글 계정 연결하기</a>
-      <a href="{{ url_for('settings') }}" class="btn">⚙️ 설정 페이지</a>
-    </div> -->
+    <div class="email-box">
+      <p>📩 이 프로그램이 궁금하다면 이메일로 문의주세요.</p>
+      <strong>이메일: hogeniuss@gmail.com</strong>
+    </div>
 
     <footer>
       <p>© 2025 Google Photos Slide Local Web App</p>
