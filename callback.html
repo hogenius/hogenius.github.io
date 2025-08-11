@@ -9,7 +9,8 @@
       const hash = window.location.hash; // 예: "#access_token=..."
 
       // localhost 개발 서버로 이동 (포트번호와 경로는 환경에 맞게 수정)
-      window.location.href = "http://localhost:7000/callback" + query + hash;
+      window.location.href =
+        "http://localhost:7000/oauth2callback" + query + hash;
     </script>
   </head>
   <body>
