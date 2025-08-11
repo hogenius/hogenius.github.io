@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // 현재 페이지의 쿼리스트링과 해시값 가져오기
+      const query = window.location.search; // 예: "?code=abcd&state=1234"
+      const hash = window.location.hash; // 예: "#access_token=..."
+
+      // localhost 개발 서버로 이동 (포트번호와 경로는 환경에 맞게 수정)
+      window.location.href = "http://localhost:7000/callback" + query + hash;
+    </script>
+  </head>
+  <body>
+    Redirecting to localhost...
+  </body>
+</html>
